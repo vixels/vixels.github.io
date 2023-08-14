@@ -1,0 +1,161 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: pixelated;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: pixelated;
+    src: url(assets/pixelated_font.ttf);
+  }
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 60px;
+    max-width: 70%;
+    margin-left: 15%;
+    margin-top: 10vh;
+}
+
+.vixelated {
+    text-decoration: none;
+    font-weight: 1000;
+    font-size: 25px;
+    background: linear-gradient(to right ,#fc03db, #03fc49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.controller {
+    max-width: 25vw;
+    max-height: 25vh;
+    display: flex;
+    margin-top: -10vh;
+    margin-left: 35vw;
+}
+
+.phone {
+    max-width: 35vw;
+    max-height: 40vh;
+    display: flex;
+    margin-top: -20vh;
+    margin-left: 38vw;
+    transform: scaleX(-1);
+    rotate: -25deg;
+    -webkit-filter: drop-shadow(inset 0px 0px 15px black);
+  filter: drop-shadow(inset 0px 0px 15px black);
+}
+
+img {
+    -webkit-filter: drop-shadow(0px 0px 5px black);
+  filter: drop-shadow(0px 0px 5px black);
+}
+
+.par {
+    display: flex;
+    margin-top: 20vh;
+    text-align: center;
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+.download {
+    display: grid;
+    font-size: 25px;
+    margin-top: 10vh;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 20%;
+    margin-left: 40%;
+    text-align: center;
+}
+
+.credit {
+    text-align: center;
+    margin-top: 25vh;
+}
+
+.activif {
+    text-decoration: none;
+    background: linear-gradient(to right ,#fc03db, #03fc49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.discord {
+    width: 40px;
+    position: absolute;
+    right: 10px;
+    transition-duration: 0.5s;
+    z-index: 999;
+}
+
+.tajda {
+    text-decoration: none;
+    color: white;
+    background-color: #6B87C8;
+    width: 90px;
+    padding: 4px 4px 4px 4px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    margin-top: -20px;
+    opacity: 0;
+    transition-duration: 0.4s;
+    font-weight: bold;
+}
+
+.pixel-corners {
+    border-style: solid;
+    border-width: 4px;
+    border-color: #000;
+    border-image-slice: 4;
+    border-image-width: 2;
+    border-image-outset: 0;
+    border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><path d='M2 2h2v2H2zM4 0h2v2H4zM10 4h2v2h-2zM0 4h2v2H0zM6 0h2v2H6zM8 2h2v2H8zM8 8h2v2H8zM6 10h2v2H6zM0 6h2v2H0zM10 6h2v2h-2zM4 10h2v2H4zM2 8h2v2H2z' fill='%23000' /></svg>");
+  }
+
+a {
+    text-decoration: none;
+}
+
+.discord:hover + .tajda {
+    opacity: 1;
+    transition-duration: 0.4s;
+    right: 40px;
+}
+
+.tajda:hover {
+    opacity: 1;
+    transition-duration: 0.4s;
+    right: 40px;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(#fc03db, #03fc49);
+}
+  
+::-webkit-scrollbar-thumb {
+    background: black;
+    border: 2px solid white;
+    transition-duration: 0.4s;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+    transition-duration: 0.4s;
+}
